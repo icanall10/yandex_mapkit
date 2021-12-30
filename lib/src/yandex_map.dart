@@ -51,7 +51,7 @@ class _YandexMapState extends State<YandexMap> {
         viewType: YandexMap.viewType,
         onPlatformViewCreated: _onPlatformViewCreated,
         gestureRecognizers: {
-          Factory<OneSequenceGestureRecognizer>(() => EagerGestureRecognizer())
+          Factory<OneSequenceGestureRecognizer>(() => TapGestureRecognizer())
         },
       );
     } else {
@@ -59,7 +59,7 @@ class _YandexMapState extends State<YandexMap> {
         viewType: YandexMap.viewType,
         onPlatformViewCreated: _onPlatformViewCreated,
         gestureRecognizers: {
-          Factory<OneSequenceGestureRecognizer>(() => EagerGestureRecognizer())
+          Factory<OneSequenceGestureRecognizer>(() => TapGestureRecognizer())
         },
       );
     }
